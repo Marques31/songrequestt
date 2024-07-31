@@ -39,7 +39,7 @@ async function verificaLinkSpotify(linkSongRequest) {
 }
 
 async function addTrackToPlaylist(track) {
-    axios.post('http://localhost:3000/request', {track_id: track}).then(response => {
+    axios.post('https://songrequestt-production.up.railway.app/request', {track_id: track}).then(response => {
         const ulRequest = document.getElementById('requests')
         const liTrack = document.createElement('li')
 
