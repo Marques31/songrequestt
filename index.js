@@ -7,7 +7,7 @@ const SpotifyWebApi = require('spotify-web-api-node');
 const spotifyApi = new SpotifyWebApi({
     clientId: '24604eb43ab4456e82f8aa73f9fccdb9',
     clientSecret: 'd9e0f7ce222d4c19ab958acb8ed8dfed',
-    redirectUri: 'https://songrequestt-production.up.railway.app//callback' // Substitua pela sua URI de redirecionamento
+    redirectUri: 'https://songrequestt-production.up.railway.app/callback' // Substitua pela sua URI de redirecionamento
 });
 
 const app = express();
