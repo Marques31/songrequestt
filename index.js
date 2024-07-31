@@ -36,7 +36,7 @@ app.get('/callback', (req, res) => {
         spotifyApi.setAccessToken(data.body['access_token']);
         spotifyApi.setRefreshToken(data.body['refresh_token']);
 
-        res.redirect('http://localhost:3000/home');
+        res.redirect('https://songrequestt-production.up.railway.app/home');
     }).catch(err => {
         console.error(err);
         res.status(500).send('Error exchanging code for token');
